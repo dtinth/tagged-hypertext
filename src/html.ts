@@ -1,4 +1,4 @@
-import { escape } from 'lodash-es'
+import escape from 'lodash.escape'
 
 /**
  *
