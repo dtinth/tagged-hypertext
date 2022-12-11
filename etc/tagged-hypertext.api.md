@@ -4,6 +4,21 @@
 
 ```ts
 
-// (No @packageDocumentation comment for this package)
+// @public
+export type Html = Hypertext | string | number | boolean | Html[];
+
+// @public
+export function html(strings: TemplateStringsArray, ...values: any[]): Hypertext;
+
+// @public
+export class Hypertext {
+    // @internal
+    constructor(__html: string);
+    static from(html: any): Hypertext;
+    toHtml(): string;
+}
+
+// @public
+export function renderHtml(html: Html): string;
 
 ```
