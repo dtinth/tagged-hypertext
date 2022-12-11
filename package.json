@@ -20,11 +20,12 @@
     "url": "https://github.com/dtinth/tagged-hypertext/issues"
   },
   "devDependencies": {
+    "@changesets/cli": "2.25.0",
     "@rushstack/heft": "0.48.7",
     "@rushstack/heft-web-rig": "0.12.10",
     "@types/heft-jest": "1.0.3",
-    "prettier": "2.7.1",
-    "@changesets/cli": "2.25.0"
+    "@types/lodash-es": "^4.17.6",
+    "prettier": "2.7.1"
   },
   "scripts": {
     "build": "heft build",
@@ -33,5 +34,8 @@
     "release": "./scripts/release",
     "format": "prettier --write .",
     "api": "./scripts/generate-api-docs"
+  },
+  "dependencies": {
+    "lodash-es": "^4.17.21"
   }
 }

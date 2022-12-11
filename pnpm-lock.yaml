@@ -5,13 +5,19 @@ specifiers:
   '@rushstack/heft': 0.48.7
   '@rushstack/heft-web-rig': 0.12.10
   '@types/heft-jest': 1.0.3
+  '@types/lodash-es': ^4.17.6
+  lodash-es: ^4.17.21
   prettier: 2.7.1
+
+dependencies:
+  lodash-es: 4.17.21
 
 devDependencies:
   '@changesets/cli': 2.25.0
   '@rushstack/heft': 0.48.7
   '@rushstack/heft-web-rig': 0.12.10_@rushstack+heft@0.48.7
   '@types/heft-jest': 1.0.3
+  '@types/lodash-es': 4.17.6
   prettier: 2.7.1
 
 packages:
@@ -1303,6 +1309,16 @@ packages:
 
   /@types/json-schema/7.0.11:
     resolution: {integrity: sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==}
+    dev: true
+
+  /@types/lodash-es/4.17.6:
+    resolution: {integrity: sha512-R+zTeVUKDdfoRxpAryaQNRKk3105Rrgx2CFRClIgRGaqDTdjsm8h6IYA8ir584W3ePzkZfst5xIgDwYrlh9HLg==}
+    dependencies:
+      '@types/lodash': 4.14.191
+    dev: true
+
+  /@types/lodash/4.14.191:
+    resolution: {integrity: sha512-BdZ5BCCvho3EIXw6wUCXHe7rS53AIDPLE+JzwgT+OsJk53oBfbSmZZ7CX4VaRoN78N+TJpFi9QPlfIVNmJYWxQ==}
     dev: true
 
   /@types/mime/3.0.1:
@@ -4661,6 +4677,10 @@ packages:
     dependencies:
       p-locate: 5.0.0
     dev: true
+
+  /lodash-es/4.17.21:
+    resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
+    dev: false
 
   /lodash.camelcase/4.3.0:
     resolution: {integrity: sha512-TwuEnCnxbc3rAvhf/LbG7tJUDzhqXyFnv3dtzLOPgCG/hODL7WFnsbwktkD7yUV0RrreP/l1PALq/YSg6VvjlA==}
