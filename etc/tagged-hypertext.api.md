@@ -5,7 +5,9 @@
 ```ts
 
 // @public
-export type Html = Hypertext | string | number | boolean | Html[];
+export type Html = Hypertext | {
+    __html: string;
+} | string | number | boolean | Html[];
 
 // @public
 export function html(strings: TemplateStringsArray, ...values: any[]): Hypertext;
