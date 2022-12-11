@@ -47,7 +47,7 @@ export class Hypertext {
     } else if (html instanceof Hypertext) {
       return html
     } else if (html.__html) {
-      return new Hypertext(html?.__html)
+      return new Hypertext(html.__html)
     } else {
       return new Hypertext(escape(String(html)))
     }
@@ -65,7 +65,13 @@ export class Hypertext {
  * The `Html` type represents anything that can be converted to HTML.
  * Use this type in your functions to accept HTML code.
  */
-export type Html = Hypertext | string | number | boolean | Html[]
+export type Html =
+  | Hypertext
+  | { __html: string }
+  | string
+  | number
+  | boolean
+  | Html[]
 
 /**
  * Convert a value to HTML.
