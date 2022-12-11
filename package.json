@@ -1,5 +1,6 @@
 {
   "name": "tagged-hypertext",
+  "description": "A template tag to safely generate HTML code with 100% code coverage.",
   "version": "1.0.0",
   "files": [
     "src",
