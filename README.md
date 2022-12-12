@@ -2,6 +2,8 @@
 
 The `tagged-hypertext` package provides the `html` function that can be used as a template tag to safely generate HTML code.
 
+This library is lightweight (2 KB) and only performs string escaping and concatenation (no virtual DOM stuff involved). [There is 100% test coverage and looking at the tests is the best way to learn how to use this library.](./src/html.test.ts)
+
 ## Example
 
 ```ts
