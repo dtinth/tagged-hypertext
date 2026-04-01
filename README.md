@@ -1,3 +1,6 @@
+> [!CAUTION]
+> This package has been deprecated; [check out @thai/html on JSR](https://jsr.io/@thai/html), which is a continuation of this library.
+
 # tagged-hypertext
 
 The `tagged-hypertext` package provides the `html` function that can be used as a template tag to safely generate HTML code.
