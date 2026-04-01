@@ -37,9 +37,3 @@ console.log(renderHtml(div))
 ```
 
 See the [tests](./src/html.test.ts) for more examples.
-
-## API reference
-
-<https://apiref.page/package/tagged-hypertext>
-
-[![API reference screenshot](https://ss.dt.in.th/api/screenshots/apiref-tagged-hypertext.png)](https://apiref.page/package/tagged-hypertext)
